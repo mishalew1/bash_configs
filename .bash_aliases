@@ -42,7 +42,7 @@ alias gb="git checkout -b" 		# Create a new Git branch and move to the new branc
 alias gd="git diff"  			# View the difference.
 
 # Windows WSL configs
-alias nmap="/mnt/c/Program\ Files\ \(x86\)/Nmap/nmap.exe"
+#alias nmap="/mnt/c/Program\ Files\ \(x86\)/Nmap/nmap.exe"
 
 # Launching Windows apps from WSL
-alias charm="/mnt/c/Program\ Files/JetBrains/PyCharm\ Community\ Edition\ 2020.3.3/bin/pycharm64.exe"
+#alias charm="/mnt/c/Program\ Files/JetBrains/PyCharm\ Community\ Edition\ 2020.3.3/bin/pycharm64.exe"
