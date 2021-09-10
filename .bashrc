@@ -46,7 +46,7 @@ function hg() {
 # Show contents of the directory after changing to it
 function cd () {
 		    builtin cd "$1"
-			    ls -AlF
+			    ls -lF
 }
 
 
