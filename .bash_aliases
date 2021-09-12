@@ -23,6 +23,7 @@ alias sshkeys='for key in ~/.ssh/id_*; do ssh-keygen -l -f "${key}"; done | uniq
 
 # networking
 alias myip="ip -o -4 a | awk {'printf (\"%-6s \t %s \n\", \$2, \$4)'} | grep -v 127.0.0.1"
+alias myroute="ip route | grep default | awk '{ print \$1, \"gateway\", \$3 }'"
 
 # show top 10 most used commands
 alias hist="history | awk '{cmd[\$2]++} END {for(elem in cmd) {print cmd[elem] \" \" elem}}' | sort -n -r | head -10"
