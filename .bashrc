@@ -20,6 +20,8 @@ BOLD_CYAN="\033[1;36m"
 BOLD_RED="\033[1;31m"
 RESTORE="\033[0m" 
 
+# Disable annoying bell
+bind 'set bell-style none'
 
 # Build the prompt
 function prompt_command {
