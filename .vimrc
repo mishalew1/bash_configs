@@ -9,6 +9,8 @@ set title
 
 " set Tab to be 4 spaces wide
 set tabstop=4
+set shiftwidth=4
+filetype plugin indent on
 
 " Ignore case when searching
 set ignorecase
