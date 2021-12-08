@@ -25,46 +25,46 @@ RESTORE="\033[0m"
 
 # Copy .bashrc_misha to ~
 if [ -f ~/.bashrc_misha ]; then
-	    echo -e "${RED}NOT overriding exisiting .bash_aliases"
-	else
-		    cp -n .bashrc_misha_ ~
-			    echo -e "${GREEN}SUCCESS, copied .bash_aliases"
+	echo -e "${RED}NOT overriding exisiting .bash_aliases"
+else
+    cp -n .bashrc_misha ~
+    echo -e "${GREEN}SUCCESS, copied .bash_aliases"
 fi
 
 
 # Copy .bash_aliases to ~
 if [ -f ~/.bash_aliases ]; then
-	    echo -e "${RED}NOT overriding exisiting .bash_aliases"
-	else
-		    cp -n .bash_aliases ~
-			    echo -e "${GREEN}SUCCESS, copied .bash_aliases"
+    echo -e "${RED}NOT overriding exisiting .bash_aliases"
+else
+    cp -n .bash_aliases ~
+    echo -e "${GREEN}SUCCESS, copied .bash_aliases"
 fi
 
 
 # Copy bash_prompt_command to ~
 if [ -f ~/.bash_prompt_command ]; then
-	    echo -e "${RED}NOT overriding exisiting .bash_prompt_command"
-	else
-		    cp -n .bash_prompt_command  ~
-			    echo -e "${GREEN}SUCCESS, copied .bash_prompt_command"
+    echo -e "${RED}NOT overriding exisiting .bash_prompt_command"
+else
+    cp -n .bash_prompt_command  ~
+    echo -e "${GREEN}SUCCESS, copied .bash_prompt_command"
 fi
 
 
 # Copy .vimrc to ~
 if [ -f ~/.vimrc ]; then
-	    echo -e "${RED}NOT overriding exisiting .vimrc"
-	else
-		    cp -n .vimrc  ~
-			    echo -e "${GREEN}SUCCESS, copied .vimrc"
+	echo -e "${RED}NOT overriding exisiting .vimrc"
+else
+    cp -n .vimrc  ~
+    echo -e "${GREEN}SUCCESS, copied .vimrc"
 fi
 
 
 # Copy .tmux to ~
 if [ -f ~/.tmux.conf ]; then
-	    echo -e "${RED}NOT overriding exisiting .tmux.conf"
-	else
-		    cp -n .tmux.conf  ~
-			    echo -e "${GREEN}SUCCESS, copied .tmux.conf"
+    echo -e "${RED}NOT overriding exisiting .tmux.conf"
+else
+    cp -n .tmux.conf  ~
+    echo -e "${GREEN}SUCCESS, copied .tmux.conf"
 fi
 
 
