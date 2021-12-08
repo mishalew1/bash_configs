@@ -10,6 +10,5 @@ My personal configurations for:
 ## Install everything
     source install_configs.sh
     
-    
 ## Uninstall everything
     source uninstall_configs.sh
