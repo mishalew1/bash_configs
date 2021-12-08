@@ -23,11 +23,11 @@ LIGHT_RED="\033[0;31m"
 RESTORE="\033[0m"
 
 
-# Copy .bashrc_misha to ~
-if [ -f ~/.bashrc_misha ]; then
+# Copy .bashrc_extra to ~
+if [ -f ~/.bashrc_extra ]; then
 	echo -e "${RED}NOT overriding exisiting .bash_aliases"
 else
-    cp -n .bashrc_misha ~
+    cp -n .bashrc_extra ~
     echo -e "${GREEN}SUCCESS, copied .bash_aliases"
 fi
 
@@ -81,15 +81,15 @@ EOF
 fi
 
 
-# Add source bashrc_misha in ~/.bashrc
-if grep -q "if \[ -f ~/.bashrc_misha ]" ~/.bashrc; then
-    echo -e "${RED}.bashrc_misha reference already configured${RESTORE}"
+# Add source bashrc_extra in ~/.bashrc
+if grep -q "if \[ -f ~/.bashrc_extra ]" ~/.bashrc; then
+    echo -e "${RED}.bashrc_extra reference already configured${RESTORE}"
 else
-    echo -e "${GREEN}.bashrc_misha reference added to .bashrc${RESTORE}"
+    echo -e "${GREEN}.bashrc_extra reference added to .bashrc${RESTORE}"
     cat >> ~/.bashrc << EOF
 
-if [ -f ~/.bashrc_misha ]; then
-    . ~/.bashrc_misha
+if [ -f ~/.bashrc_extra ]; then
+    . ~/.bashrc_extra
 fi
 
 EOF

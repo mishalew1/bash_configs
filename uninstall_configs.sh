@@ -6,7 +6,7 @@
 files=(
 .bash_aliases
 .bash_prompt_command 
-.bashrc_misha 
+.bashrc_extra 
 .tmux.conf 
 .vimrc 
 )
