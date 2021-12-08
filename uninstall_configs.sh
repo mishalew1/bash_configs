@@ -4,18 +4,11 @@
 # It first creates backups of the config files
 
 files=(
-<<<<<<< HEAD
-.bashrc_misha 
-.bash_prompt_command 
-.vimrc 
-.tmux.conf 
-=======
-.bashrc_misha
-.bash_prompt_command
-.vimrc
-.tmux.conf
->>>>>>> da7526cf136b0bd62f7025c6dce94ac4f0128bd6
 .bash_aliases
+.bash_prompt_command 
+.bashrc_misha 
+.tmux.conf 
+.vimrc 
 )
 
 for file in "${files[@]}"; do
