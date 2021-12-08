@@ -16,5 +16,8 @@ for file in "${files[@]}"; do
     rm ~/"$file";
 done
 
+# Reset PROMPT_COMMAND variable
+unset PROMPT_COMMAND
+
 # Reload bashrc
 source ~/.bashrc

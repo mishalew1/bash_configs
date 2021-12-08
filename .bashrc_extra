@@ -26,8 +26,8 @@ RESTORE="\033[0m"
 
 # Build the prompt
 function prompt_command {
-		RET=$?
-			export PS1=$(~/.bash_prompt_command $RET)
+	RET=$?
+    export PS1=$(~/.bash_prompt_command $RET)
 }
 PROMPT_DIRTRIM=3
 export PROMPT_COMMAND=prompt_command
