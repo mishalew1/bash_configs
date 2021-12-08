@@ -15,3 +15,6 @@ for file in "${files[@]}"; do
     cp -n ~/"$file" ~/"$file".bak
     rm ~/"$file";
 done
+
+# Reload bashrc
+source ~/.bashrc
