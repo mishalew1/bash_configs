@@ -74,6 +74,7 @@ if grep -q "if \[ -f ~/.bash_aliases ]" ~/.bashrc; then
 else
 	echo -e "${GREEN}adding reference to bash_aliases file in bashrc${RESTORE}"
     cat >> ~/.bashrc << EOF
+
 if [ -f ~/.bash_aliases ]; then
 	. ~/.bash_aliases
 fi
@@ -88,6 +89,7 @@ if grep -q "if \[ -f ~/.bashrc_misha ]" ~/.bashrc; then
 else
 	echo -e "${GREEN}.bashrc_misha reference added to .bashrc"
     cat >> ~/.bashrc << EOF
+
 if [ -f ~/.bashrc_misha ]; then
 	. ~/.bashrc_misha
 fi
