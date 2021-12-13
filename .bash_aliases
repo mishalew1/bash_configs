@@ -9,18 +9,18 @@ alias grep='grep --color=auto'
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
-alias bashrc="vi ~/.bashrc"
-alias bashrc2="vi ~/.bashrc_extra"
-alias bashalias="vi ~/.bash_aliases"
+alias bashrc="$EDITOR ~/.bashrc"
+alias bashrc2="$EDITOR ~/.bashrc_extra"
+alias bashalias="$EDITOR ~/.bash_aliases"
 alias bashreload="source ~/.bashrc"
-alias vimrc="vi ~/.vimrc"
+alias vimrc="$EDITOR ~/.vimrc"
 alias allusers="getent passwd {1000..60000}"
 alias update-grub="grub2-mkconfig -o /boot/grub2/grub.cfg"
 alias py='python3'
 
 # SSH connections
 alias sshlist="sed -rn 's/^\s*Host\s+(.*)\s*/\1/ip' ~/.ssh/config"
-alias sshedit="vi ~/.ssh/config"
+alias sshedit="$EDITOR ~/.ssh/config"
 alias sshkeys='for key in ~/.ssh/id_*; do ssh-keygen -l -f "${key}"; done | uniq'
 
 # networking
