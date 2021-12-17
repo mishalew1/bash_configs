@@ -1,3 +1,6 @@
+# Editor
+export EDITOR='vi'
+
 # system shortcuts
 alias c="clear"
 alias l="ls --color=auto"

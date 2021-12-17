@@ -1,6 +1,3 @@
-# Editor
-export EDITOR='vi'
-
 # History size
 HISTSIZE=2000
 HISTFILESIZE=2000
