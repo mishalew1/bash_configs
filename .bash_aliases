@@ -38,6 +38,7 @@ alias hist="history | awk '{cmd[\$2]++} END {for(elem in cmd) {print cmd[elem] \
 # docker shortcuts
 alias dimg="docker images"
 alias dll="docker container ls -a"
+alias dcp='docker-compose -f ~/docker-services/docker-compose.yml'
  
 # Git shortcuts
 alias gs="git status" 			# View Git status.
