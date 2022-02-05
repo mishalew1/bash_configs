@@ -1,6 +1,3 @@
-# Set terminal title
-echo -ne "\033]0;$(hostname)\a"
-
 # History size
 HISTSIZE=2000
 HISTFILESIZE=2000
@@ -49,19 +46,13 @@ function hg() {
 # Show contents of the directory after changing to it
 function cd () {
 		    builtin cd "$1"
-			    ls -lhF
+			    ls -lFh
 }
 
-
 #printf "\n"
-#printf "   %s\n" "IP ADDR: $(curl -s ifconfig.me)"
-#printf "   %s\n" "USER: $(echo $USER)"
-#printf "   %s\n" "DATE: $(date)"
-#printf "   %s\n" "UPTIME: $(uptime -p)"
-#printf "   %s\n" "HOSTNAME: $(hostname -f)"
-##printf "   %s\n" "CPU: $(awk -F: '/model name/{print $2}' | head -1)"
-#printf "   %s\n" "KERNEL: $(uname -rms)"
-#printf "   %s\n" "PACKAGES: $(dpkg --get-selections | wc -l)"
-##printf "   %s\n" "RESOLUTION: $(xrandr | awk '/\*/{printf $1" "}')"
-#printf "   %s\n" "MEMORY: $(free -m -h | awk '/Mem/{print $3"/"$2}')"
-#printf "\n"
+printf "   %s\n" "DATE: $(date "+%a, %d %b")"
+printf "   %s\n" "DISKS: $(free | awk '/Mem/{print 100 - $3/$2 * 100 "%"}')"
+printf "   %s\n" "CPU: $(cat /proc/cpuinfo | awk -F: '/model name/ {print $2; exit}')"
+printf "   %s\n" "USER: $(echo $USER)"
+printf "   %s\n" "HOSTNAME: $(hostname -f)"
+printf "\n"
