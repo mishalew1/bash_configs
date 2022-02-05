@@ -20,6 +20,7 @@ alias vimrc="$EDITOR ~/.vimrc"
 alias allusers="getent passwd {1000..60000}"
 alias update-grub="grub2-mkconfig -o /boot/grub2/grub.cfg"
 alias py='python3'
+alias mydf='df -h -x squashfs -x tmpfs -x devtmpfs'
 
 # SSH connections
 alias sshlist="sed -rn 's/^\s*Host\s+(.*)\s*/\1/ip' ~/.ssh/config"
