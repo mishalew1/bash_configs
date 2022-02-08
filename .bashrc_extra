@@ -1,3 +1,6 @@
+# Set terminal title
+echo -ne "\033]0;$(hostname)\a"
+
 # History size
 HISTSIZE=2000
 HISTFILESIZE=2000
