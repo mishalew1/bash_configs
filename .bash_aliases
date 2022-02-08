@@ -6,6 +6,7 @@ alias c="clear"
 alias l="ls --color=auto"
 alias ll="ls -lFh --color=auto"
 alias la="ls -AlFh --color=auto"
+alias lsdir="ls -dlhA */"
 alias cp="cp -rv"
 alias mkdir="mkdir -p -v"
 alias grep='grep --color=auto'
