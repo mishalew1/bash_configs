@@ -3,7 +3,7 @@
 # This script uninstalls the config files previously installed
 # It first creates backups of the config files
 
-files=(
+FILES=(
 .bash_aliases
 .bash_prompt_command 
 .bashrc_extra 
@@ -11,7 +11,7 @@ files=(
 .vimrc 
 )
 
-for file in "${files[@]}"; do
+for file in "${FILES[@]}"; do
     cp -n ~/"$file" ~/"$file".bak
     rm ~/"$file";
 done
