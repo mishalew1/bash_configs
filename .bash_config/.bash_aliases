@@ -1,28 +1,36 @@
 # Editor
 export EDITOR='vi'
 
+BASHDIR="$HOME/.bash_config"
+
 # system shortcuts
 alias c="clear"
 alias l="ls --color=auto"
-alias ll="ls -lFh --color=auto"
-alias la="ls -AlFh --color=auto"
+alias ll="ls -lFh"
+alias la="ls -AlFh"
 alias ldir='ls -dhlA .*/ */'
-alias cp="cp -rv"
+alias cp="cp -nrv"
 alias mkdir="mkdir -p -v"
 alias grep='grep --color=auto'
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
-alias bashrc="$EDITOR ~/.bashrc"
-alias bashrc2="$EDITOR ~/.bashrc_extra"
-alias bashalias="$EDITOR ~/.bash_aliases"
 alias bashreload="source ~/.bashrc"
+alias bashrc="$EDITOR ~/.bashrc"
+alias bashalias="$EDITOR $BASHDIR/.bash_aliases"
+alias bashfunctions="$EDITOR $BASHDIR/.bash_functions"
+alias bashprompt="$EDITOR $BASHDIR/.bash_prompt"
+alias bashpromptcommand="$EDITOR $BASHDIR/.bash_prompt_command"
+alias bashsettings="$EDITOR $BASHDIR/.bash_settings"
+alias bashsource="$EDITOR $BASHDIR/.bash_source"
 alias zreload="source ~/.zshrc"
 alias vimrc="$EDITOR ~/.vimrc"
 alias allusers="getent passwd {1000..60000}"
 alias update-grub="grub2-mkconfig -o /boot/grub2/grub.cfg"
 alias py='python3'
 alias mydf='df -h -x squashfs -x tmpfs -x devtmpfs'
+alias mypath='echo -e ${PATH//:/\\n}'
+alias mybin="la $BASHDIR/bin"
 
 # SSH connections
 alias sshlist="sed -rn 's/^\s*Host\s+(.*)\s*/\1/ip' ~/.ssh/config"

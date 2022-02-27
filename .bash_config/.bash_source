@@ -1,0 +1,24 @@
+BASHDIR="$HOME/.bash_config"
+
+# bash_aliases
+if [ -f $BASHDIR/.bash_aliases ]; then
+    . $BASHDIR/.bash_aliases
+fi
+
+
+# bash_functions
+if [ -f $BASHDIR/.bash_functions ]; then
+    . $BASHDIR/.bash_functions
+fi
+
+
+# bash_prompt
+if [ -f $BASHDIR/.bash_prompt ]; then
+    . $BASHDIR/.bash_prompt
+fi
+
+
+# bash_settings
+if [ -f $BASHDIR/.bash_settings ]; then
+    . $BASHDIR/.bash_settings
+fi

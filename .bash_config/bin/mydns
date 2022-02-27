@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Functions
+do_resolvectl() {
+    resolvectl status 2> /dev/null | grep 'DNS Servers' -A1
+}
+
+
+do_etc_resolv() {
+	grep nameserver /etc/resolv*
+}
+
+
+# Define main program
+main(){
+    do_resolvectl && exit 0
+    do_etc_resolv
+}
+
+# Run main program
+main
