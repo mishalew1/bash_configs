@@ -21,6 +21,7 @@ COPY_THESE=(
 # loop through list and copy items to $HOME
 for item in ${COPY_THESE[@]}; do
 	cp -nr "$item" "$HOME/test"
+
 done
 
 
