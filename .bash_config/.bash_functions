@@ -12,8 +12,13 @@ function hg() {
 
 # show contents of the directory after changing to it
 function cd() {
-    builtin cd "$1"
-    ls -lFh
+	if [ $# = 0 ]; then
+		builtin cd $HOME
+		pwd
+    else
+		builtin cd "$1"
+    	ls -lFh
+	fi
 }
 
 # make dir and cd into the dir

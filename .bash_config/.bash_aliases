@@ -9,7 +9,7 @@ alias l="ls --color=auto"
 alias ll="ls -lFh"
 alias la="ls -AlFh"
 alias ldir='ls -dhlA .*/ */'
-alias cp="cp -nrv"
+alias cp="cp -rv"
 alias mkdir="mkdir -p -v"
 alias grep='grep --color=auto'
 alias ..="cd .."
