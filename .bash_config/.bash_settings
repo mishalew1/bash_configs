@@ -1,3 +1,7 @@
+# emacs shortcuts are bash default, such as Ctrl + L clear screen
+set -o emacs
+# set -o vi
+
 # History size
 HISTSIZE=2000
 HISTFILESIZE=2000
