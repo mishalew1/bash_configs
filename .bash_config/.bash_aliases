@@ -4,7 +4,8 @@ export EDITOR='vi'
 BASHDIR="$HOME/.bash_config"
 
 # system shortcuts
-alias c="clear"
+alias c='clear -x'
+alias sudo='sudo '
 alias l="ls --color=auto"
 alias ll="ls -lFh"
 alias la="ls -AlFh"

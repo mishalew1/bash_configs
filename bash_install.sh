@@ -38,6 +38,14 @@ fi
 EOF
 fi
 
+# If root change user to red and prompt to #
+#if 
+	#sed -n -r '/echo "\$\{\w+\}\\u \$\{\w+\}\\h(.*)/p' .bash_prompt_command
+
+
+
+
+
 
 # Reload current environment
 source ~/.bashrc

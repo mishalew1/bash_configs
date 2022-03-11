@@ -48,7 +48,7 @@ fi
 if which git &>/dev/null; then
     BRANCH="$(git branch 2>/dev/null | grep \* |  cut -d ' ' -f 2)"
 else
-    BRANCH="(git not installed)"
+    BRANCH=""
 fi
 
 if [ $RET != 0 ]; then

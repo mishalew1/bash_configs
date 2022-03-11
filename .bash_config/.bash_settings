@@ -16,9 +16,6 @@ esac
 
 
 #printf "\n"
-printf "   %s\n" "DATE: $(date "+%a, %d %b")"
-#printf "   %s\n" "MEMORY: $(free | awk '/Mem/{print 100 - $3/$2 * 100 "%"}')"
-printf "   %s\n" "CPU: $(cat /proc/cpuinfo | awk -F: '/model name/ {print $2; exit}')"
-printf "   %s\n" "USER: $(echo $USER)"
-printf "   %s\n" "HOSTNAME: $(hostname -f)"
+printf "   %s\n" "$(date "+ %a, %d %b, %l:%M %p")"
+printf "   %s\n" "$(ansiweather)"
 printf "\n"
