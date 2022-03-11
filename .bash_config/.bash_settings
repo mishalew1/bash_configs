@@ -14,8 +14,4 @@ case ":$PATH:" in
   PATH="$PATH:$new_entry";; 
 esac
 
-
-#printf "\n"
-printf "   %s\n" "$(date "+ %a, %d %b, %l:%M %p")"
-printf "   %s\n" "$(ansiweather)"
-printf "\n"
+printf "\n%s\n\n" "$(date '+ %a, %d %b, %l:%M %p')"
