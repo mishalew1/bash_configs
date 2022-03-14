@@ -14,4 +14,7 @@ case ":$PATH:" in
   PATH="$PATH:$new_entry";; 
 esac
 
-printf "\n%s\n\n" "$(date '+ %a, %d %b, %l:%M %p')"
+
+if shopt -q login_shell; then
+    printf "\n%s\n\n" "$(date '+ %a, %d %b, %l:%M %p')"
+fi
