@@ -13,9 +13,10 @@ BASHDIR="$HOME/.bash_config"
 # list of items to be copied to $HOME
 COPY_THESE=(
 .bash_config/
-.Xresources
+.ansiweatherrc
 .tmux.conf
 .vimrc
+.Xresources
 )
 
 # loop through list and copy items to $HOME
